@@ -13,20 +13,27 @@ The Document object allows us to dynamically modify the content of the web page.
 ### Handling Events:
 The Document object provides methods for registering event listeners and handling user interactions within the document. we can attach event handlers to elements or the document itself to respond to user actions such as clicks, keypresses, or form submissions.
 
+```javascript
+// JavaScript code snippet
 // Example: Adding a click event listener to an element
 element.addEventListener('click', function() {
     console.log('Element clicked!');
 });
+```
 
 ### Traversal and Manipulation:
 In addition to selecting elements by their IDs or classes, we can traverse the document tree and manipulate elements based on their relationships with other elements. This allows for more complex interactions and dynamic updates to the document structure.
 
+```javascript
+// JavaScript code snippet
 // Example: Appending a new element to an existing one
 let newElement = document.createElement('div');
 element.appendChild(newElement);
+```
 
 ### Basic HTML Document
 
+```html
 <!-- HTML code snippet -->
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +47,7 @@ element.appendChild(newElement);
     <h1>hello</h1>
 </body>
 </html>
+```
 
 - Example of how to access content field
 
