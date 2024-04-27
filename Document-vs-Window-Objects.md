@@ -27,6 +27,7 @@ element.appendChild(newElement);
 
 ### Basic HTML Document
 
+<!-- HTML code snippet -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +43,12 @@ element.appendChild(newElement);
 
 - Example of how to access content field
 
+```javascript
+// JavaScript code snippet
 // Accessing the <head> element
 let headElement = document.head;
 // Accessing all <meta> elements within the <head> element
 let metaTags = headElement.getElementsByTagName('meta');
-
 // Looping through the <meta> elements to find the one with name="viewport"
 for (let i = 0; i < metaTags.length; i++) {
     if (metaTags[i].getAttribute('name') === 'viewport') {
@@ -58,20 +60,21 @@ for (let i = 0; i < metaTags.length; i++) {
         break;
     }
 }
+```
 
 - Example of how to access text from h1 tag
 
+```javascript
+// JavaScript code snippet
 // Accessing the <body> element
 let bodyElement = document.body;
-
 // Accessing the first child node of the <body> element, which is the <h1> element
 let h1Element = bodyElement.firstChild;
-
 // Retrieving the text content of the <h1> element
 let helloText = h1Element.textContent;
-
 // Logging the text content to the console
 console.log(helloText); // Output: "hello"
+```
 
 ## Window Object:
 
